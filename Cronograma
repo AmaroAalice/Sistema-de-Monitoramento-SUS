@@ -1,0 +1,27 @@
+Entrega 1 – Backend Inicial
+
+Data: 22/04/2026
+O que entregar:
+	•	Estrutura do projeto em Python 
+	•	Configuração do banco de dados
+	•	Rotas básicas funcionando (API ou páginas)
+
+
+Entrega 2 – Funcionalidades Principais
+
+Data: 13/05/2026
+O que entregar:
+	•	Sistema de agendamento funcionando
+	•	Painel de lotação (cores: verde, amarelo, vermelho)
+	•	Integração com banco de dados
+	•	Testes básicos (criar, listar agendamentos)
+
+
+Entrega 3 – Finalização
+
+Data: 03/06/2026
+O que entregar:
+	•	Interface mais organizada (front-end?)
+	•	Melhorias (notificações, validações, etc.)
+	•	Correção de bugs
+	•	Sistema pronto para demonstração
