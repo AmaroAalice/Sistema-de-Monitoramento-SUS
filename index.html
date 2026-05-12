@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento SUS</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fb; color: #1b2738; }
+        header { background: #00549a; color: #fff; padding: 2rem 1rem; text-align: center; }
+        header h1 { margin: 0 0 0.5rem; font-size: 2rem; }
+        header p { margin: 0; opacity: 0.9; }
+        main { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+        .card { background: #fff; border-radius: 18px; padding: 1.5rem; box-shadow: 0 14px 30px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h2 { color: #00549a; }
+        .links { display: grid; gap: 1rem; margin-top: 1rem; }
+        .button { display: inline-block; background: #00549a; color: #fff; text-decoration: none; padding: 1rem 1.2rem; border-radius: 12px; font-weight: bold; transition: background 0.2s ease; }
+        .button:hover { background: #003f75; }
+        .note { background: #eaf3ff; border-left: 4px solid #00549a; padding: 1rem; margin-top: 1rem; border-radius: 12px; }
+        footer { text-align: center; color: #55606f; padding: 1.5rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Monitoramento SUS</h1>
+        <p>Plataforma de fluxos de atendimento e agendamento remoto para unidades de saúde.</p>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Sobre o projeto</h2>
+            <p>Este projeto simula uma plataforma de monitoramento de lotação e agendamento para o SUS. Ele possui backend em Python/Flask, banco SQLite e frontend em HTML/CSS/JS.</p>
+            <div class="links">
+                <a class="button" href="frontend/index.html">Ver Dashboard do Paciente</a>
+                <a class="button" href="frontend/admin.html">Ver Painel Administrativo</a>
+                <a class="button" href="README.md">Instruções de execução</a>
+            </div>
+            <div class="note">
+                <strong>Atenção:</strong> o backend Python não é executado diretamente pelo GitHub Pages. Para usar o sistema completo, é necessário executar o servidor localmente conforme as instruções em <strong>README.md</strong>.
+            </div>
+        </section>
+        <section class="card">
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li>Listar unidades de saúde e status de lotação.</li>
+                <li>Buscar horários disponíveis de médicos.</li>
+                <li>Efetuar agendamentos remotos.</li>
+                <li>Sugerir a unidade mais próxima com base em geolocalização fictícia.</li>
+                <li>Atualizar manualmente o status de lotação no painel administrativo.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Feito para apresentação acadêmica de monitoramento SUS.</p>
+    </footer>
+</body>
+</html>
