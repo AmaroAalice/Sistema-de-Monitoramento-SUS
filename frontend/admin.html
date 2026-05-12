@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento SUS - Painel Administrativo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Painel Administrativo</h1>
+        <p>Atualize o status de lotação das unidades do SUS.</p>
+    </header>
+    <main>
+        <section aria-labelledby="admin-lista-title">
+            <h2 id="admin-lista-title">Unidades Cadastradas</h2>
+            <ul id="admin-unidades" class="status-list"></ul>
+        </section>
+
+        <section aria-labelledby="admin-form-title">
+            <h2 id="admin-form-title">Atualizar Status</h2>
+            <form id="form-status">
+                <div class="form-group">
+                    <label for="admin-unidade">Escolha a unidade</label>
+                    <select id="admin-unidade" name="admin-unidade" required></select>
+                </div>
+                <div class="form-group">
+                    <span>Status de lotação:</span>
+                    <label><input type="radio" name="status_lotacao" value="verde"> Verde</label>
+                    <label><input type="radio" name="status_lotacao" value="amarelo"> Amarelo</label>
+                    <label><input type="radio" name="status_lotacao" value="vermelho"> Vermelho</label>
+                </div>
+                <div class="form-group">
+                    <label for="ocupacao_atual">Ocupação atual de pessoas</label>
+                    <input type="number" id="ocupacao_atual" name="ocupacao_atual" min="0" placeholder="Número de pessoas" required>
+                </div>
+                <button type="submit">Salvar Alterações</button>
+            </form>
+            <div id="alerta-admin" class="alert" role="status"></div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="/">Voltar para o Dashboard do Paciente</a></p>
+    </footer>
+    <script src="/static/admin.js"></script>
+</body>
+</html>
